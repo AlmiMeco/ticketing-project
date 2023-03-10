@@ -142,24 +142,25 @@
                                     <div class="table-responsive">
                                         <table class="table table-striped">
                                             <thead>
-                                            <tr>
-                                                <th scope="col">Name</th>
-                                                <th scope="col">Email(username)</th>
-                                                <th scope="col">Gender</th>
-                                                <th scope="col">Phone</th>
-                                                <th scope="col">Role</th>
-                                                <th scope="col">Action</th>
+                                            <tr >
+                                                <th scope="col"  >Name</th>
+                                                <th scope="col"  >Email(username)</th>
+                                                <th scope="col"  >Gender</th>
+                                                <th scope="col"  >Phone</th>
+                                                <th scope="col"  >Role</th>
+                                                <th scope="col"  >Action</th>
                                             </tr>
                                             </thead>
 
                                             <tbody>
 
-                                            <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                            <tr th:each="user : ${listOfUsers}">
+                                                <td th:text="${user.firstName + ' ' + user.lastName}" ></td>
+                                                <td th:text="${user.userName}" ></td>
+                                                <td th:text="${user.gender}" ></td>
+                                                <td th:text="${user.phone}" ></td>
+                                                <td th:text="${user.role.getDescription()}" ></td>
+                                                <td th:text="${user.enabled}" ></td>
                                                 <td class="actions">
                                                     <a href="#"><button type="button" class="btn btn-warning btn-sm">Update</button></a>
                                                     <a href="#" class="delete-row"><button type="button" class="btn btn-secondary btn-sm">Delete</button></a>
