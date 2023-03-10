@@ -1,7 +1,6 @@
-package com.cydeo.model;
+package com.cydeo.entity;
 
 import com.cydeo.enums.Gender;
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,7 +8,7 @@ import java.time.LocalDateTime;
 
 @Data
 @NoArgsConstructor
-public class User extends BaseEntity{
+public class User extends BaseEntity {
 
 
     private String firstName, lastName, userName, passWord, phone;
