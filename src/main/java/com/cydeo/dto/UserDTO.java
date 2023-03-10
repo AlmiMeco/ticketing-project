@@ -15,7 +15,7 @@ public class UserDTO {
 
     private boolean enabled;
 
-    private Role role;
+    private RoleDTO role;
 
     private Gender gender;
 
