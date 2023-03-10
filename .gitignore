@@ -1,4 +1,4 @@
 # Project exclude paths
 /target/
 /src/main/resources/static/
-.idae
+.idea

@@ -4,16 +4,18 @@ import com.cydeo.dto.UserDTO;
 
 import java.util.List;
 
-public interface UserService {
-
-    UserDTO save(UserDTO userDTO);
-
-    UserDTO findById(String userName);
-
-    List<UserDTO> findAll();
-
-    void deleteById (String userName);
+public interface UserService extends CRUDService<UserDTO, String> {
 
 
-
+//    @Override
+//    UserDTO save(UserDTO user);
+//
+//    @Override
+//    UserDTO findById(String s);
+//
+//    @Override
+//    List<UserDTO> findAll();
+//
+//    @Override
+//    void deleteById(String s);
 }
