@@ -36,15 +36,9 @@ public class UserController {
     @PostMapping("/create")
     public String addNewUser(@ModelAttribute("user") UserDTO newlyCreatedUser, Model model){
 
-        model.addAttribute("user", new UserDTO()); // empty object for form (after user is created)
-        model.addAttribute("listOfRoles", roleService.findAll() );
-
         userService.save(newlyCreatedUser);
 
-        model.addAttribute("listOfUsers", userService.findAll());
-
-
-        return "user/create";
+        return "redirect:/user/create";
     }
 
 
