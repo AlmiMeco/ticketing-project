@@ -42,10 +42,17 @@ public class UserController {
     public String updateUser(@PathVariable("username") String username, Model model) {
 
         model.addAttribute("user", userService.findById(username));
-        model.addAttribute("roles", roleService.findAll());
-        model.addAttribute("users", userService.findAll());
+        model.addAttribute("listOfRoles", roleService.findAll());
+        model.addAttribute("listOfUsers", userService.findAll());
 
-        return "/user/update";
+        return "user/update";
     }
 
+    @PostMapping("/update")
+    public String updateButtonRedirect(@ModelAttribute("user") UserDTO user){
+
+        userService.update(user);
+
+        return "redirect:/user/create";
+    }
 }

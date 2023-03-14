@@ -1,5 +1,7 @@
 package com.cydeo.service;
 
+import com.cydeo.dto.UserDTO;
+
 import java.util.List;
 
 public interface CRUDService <T,ID> { // -> placeholders (generic) types <T,ID>
@@ -14,5 +16,7 @@ public interface CRUDService <T,ID> { // -> placeholders (generic) types <T,ID>
         List<T> findAll();
 
         void deleteById(ID id);
+
+        void update(T t);
 
 }
