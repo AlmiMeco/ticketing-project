@@ -9,6 +9,8 @@ public abstract class AbstractMapService <T,ID>{
 
     public Map<ID,T> map = new HashMap<>(); // <- dataBase where all DATA will be saved
 
+//    When we will have a TRUE dataBase this whole abstract class will be pre-config by Spring Boot w/ many pre-built methods
+
 
     T save(ID id, T object){
         map.put(id,object);   // <GENERIC> .save() method will work for ALL implementations (RoleService, UserService, etc..)
