@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.stream.events.StartElement;
+
 @Controller
 @RequestMapping("/user")
 public class UserController {
@@ -39,13 +41,13 @@ public class UserController {
     }
 
     @GetMapping("/update/{username}")
-    public String updateUser(@PathVariable("username") String username, Model model) {
+    public String selectUserToUpdate(@PathVariable("username") String username, Model model) {
 
         model.addAttribute("user", userService.findById(username));
         model.addAttribute("listOfRoles", roleService.findAll());
         model.addAttribute("listOfUsers", userService.findAll());
 
-        return "user/update";
+        return "/user/update";
     }
 
     @PostMapping("/update")
@@ -55,4 +57,14 @@ public class UserController {
 
         return "redirect:/user/create";
     }
+
+    @GetMapping("/delete/{username}")
+    public String delete(@PathVariable("username") String username){
+
+        userService.deleteById(username);
+
+        return "redirect:/user/create";
+    }
+
+
 }
