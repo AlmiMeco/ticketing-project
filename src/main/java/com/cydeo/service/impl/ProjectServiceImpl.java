@@ -34,6 +34,7 @@ public class ProjectServiceImpl extends AbstractMapService<ProjectDTO, String> i
 
         if (projectDTO.getProjectStatus() == null) {
             projectDTO.setProjectStatus(findById(projectDTO.getProjectCode()).getProjectStatus());
+//            when updating a project -> set the new projectStatus (updated project) to the same as before
         }
 
         super.update(projectDTO.getProjectCode(), projectDTO);
