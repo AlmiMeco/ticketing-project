@@ -47,5 +47,30 @@ public class ProjectController {
         return "redirect:/project/create";
     }
 
+    @GetMapping("/complete/{projectCode}")
+    public String completeProject(@PathVariable("projectCode") String projectCode){
+
+        projectService.completeProject(projectService.findById(projectCode));
+
+        return "redirect:/project/create";
+    }
+
+    @GetMapping("/update/{projectCode}")
+    public String updateProject(@PathVariable("projectCode") String projectCode, Model model){
+
+        model.addAttribute("project", projectService.findById(projectCode));
+        model.addAttribute("listOfProjects", projectService.findAll());
+        model.addAttribute("listOfManagers", userService.findManagers());
+
+        return "project/update";
+    }
+    @PostMapping("/update")
+    public String updateProjectRedirect(@ModelAttribute("project") ProjectDTO project){
+
+        projectService.update(project);
+
+        return "redirect:/project/create";
+    }
+
 
 }
