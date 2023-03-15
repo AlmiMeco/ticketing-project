@@ -6,16 +6,7 @@ import java.util.List;
 
 public interface UserService extends CRUDService<UserDTO, String> {
 
+    List<UserDTO> findManagers();
 
-//    @Override
-//    UserDTO save(UserDTO user);
-//
-//    @Override
-//    UserDTO findById(String s);
-//
-//    @Override
-//    List<UserDTO> findAll();
-//
-//    @Override
-//    void deleteById(String s);
+
 }
