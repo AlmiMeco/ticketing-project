@@ -13,7 +13,7 @@ public abstract class AbstractMapService <T,ID>{
 
 
     T save(ID id, T object){
-        map.put(id,object);   // <GENERIC> .save() method will work for ALL implementations (RoleService, UserService, etc..)
+        map.put(id,object);   // <GENERIC> .save() method will work for ALL implementations (RoleService, UserService, ProjectService etc..)
         return object;
     }
 
