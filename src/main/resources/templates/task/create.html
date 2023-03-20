@@ -40,7 +40,8 @@
                                                     <label>Project</label>
                                                     <select name="project" th:field="*{project}" class="custom-select">
                                                         <option th:value="' '" th:text="Select"  ></option>
-                                                        <option th:each="project : ${listOfProjects}" th:text="${project.projectName}" th:value="${project.projectCode}" ></option>
+                                                        <option th:each="project : ${listOfProjects}" th:text="${project.projectName}"
+                                                                th:value="${project.projectCode}" ></option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -52,7 +53,8 @@
                                                     <label>Assigned Employee</label>
                                                     <select name="assignedemployee" th:field="*{assignedEmployee}" class="custom-select">
                                                         <option th:value="' '" th:text="Select" ></option>
-                                                        <option th:each="employee : ${listOfEmployees}" th:text="${employee.firstName + ' ' + employee.lastName}" th:value="${employee.userName}" ></option>
+                                                        <option th:each="employee : ${listOfEmployees}" th:text="${employee.firstName + ' ' + employee.lastName}"
+                                                                th:value="${employee.userName}" ></option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -130,10 +132,10 @@
                                                 <td th:text="${task.taskSubject}" ></td>
                                                 <td th:text="${task.assignedEmployee.firstName + ' ' + task.assignedEmployee.lastName}" ></td>
                                                 <td th:text="${task.assignedDate}" ></td>
-                                                <td th:text="${task.taskStatus}" ></td>
+                                                <td th:text="${task.taskStatus.value}" ></td>
                                                 <td class="actions">
-                                                    <a href="#" class="btn btn-warning rounded-0">Update</a>
-                                                    <a href="#" class="btn btn-danger rounded-0">Delete</a>
+                                                    <a th:href="@{/task/update/{taskID}(taskID=${task.getTaskID()})}" class="btn btn-warning rounded-0">Update</a>
+                                                    <a th:href="@{/task/delete/{taskID}(taskID=${task.getTaskID()})}" class="btn btn-danger rounded-0">Delete</a>
                                                 </td>
                                             </tr>
                                             </tbody>
