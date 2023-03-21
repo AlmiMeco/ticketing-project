@@ -12,4 +12,6 @@ public interface TaskService extends CRUDService<TaskDTO, Long>{
 
     List<TaskDTO> findAllIncompleteTasks(Status status);
 
+    List<TaskDTO> findAllCompleteTasks(Status status);
+
 }
