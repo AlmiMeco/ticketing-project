@@ -48,11 +48,12 @@ public class TaskServiceImpl extends AbstractMapService<TaskDTO, Long> implement
     @Override
     public void update(TaskDTO taskDTO) {
 
-        if (taskDTO.getTaskStatus() == null)
-            taskDTO.setTaskStatus(Status.OPEN);
+        TaskDTO foundTask = findById(taskDTO.getTaskID()); // old Task stored in MAP
 
-        if (taskDTO.getAssignedDate() == null)
-            taskDTO.setAssignedDate(LocalDate.now());
+        taskDTO.setTaskStatus(foundTask.getTaskStatus());
+        taskDTO.setAssignedDate(foundTask.getAssignedDate());
+        // setting new Tasks (status/ID) <- they are hidden to end user & cannot be implicitly set
+
 
         super.update(taskDTO.getTaskID(), taskDTO);
     }
