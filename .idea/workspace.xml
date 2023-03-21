@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Finished (Project Status page finished)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678416518065</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)">
+      <created>1679427302558</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679427302558</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,6 +177,7 @@
     <MESSAGE value="Spring MVC: DAY 10  -&gt;   @2:19:00" />
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 10" />
+    <MESSAGE value="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)" />
   </component>
 </project>
