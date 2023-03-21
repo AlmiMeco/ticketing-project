@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task/pending-tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/task/pending-tasks.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679427302558</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)">
+      <created>1679427955257</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679427955257</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +183,7 @@
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
     <MESSAGE value="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)" />
+    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)" />
   </component>
 </project>
