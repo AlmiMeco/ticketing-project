@@ -1,6 +1,7 @@
 package com.cydeo.controllers;
 
 import com.cydeo.dto.TaskDTO;
+import com.cydeo.enums.Status;
 import com.cydeo.service.ProjectService;
 import com.cydeo.service.TaskService;
 import com.cydeo.service.UserService;
@@ -97,7 +98,7 @@ public class TaskController {
     @GetMapping("/employee/pending-tasks")
     public String employeePendingTasks(Model model){
 
-        model.addAttribute("")
+        model.addAttribute("tasks", taskService.findAllIncompleteTasks(Status.COMPLETED));
 
         return "/task/pending-tasks";
     }
