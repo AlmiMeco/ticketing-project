@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +35,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/user/create.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -162,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679428550398</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)">
+      <created>1679428826577</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679428826577</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,6 +211,17 @@
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive html files populated)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)" />
+    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
