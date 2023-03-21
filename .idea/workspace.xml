@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/TaskService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/TaskService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679428826577</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)">
+      <created>1679434271904</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1679434271904</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +219,8 @@
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive html files populated)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
+    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
