@@ -5,8 +5,10 @@ import com.cydeo.service.RoleService;
 import com.cydeo.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import javax.xml.stream.events.StartElement;
 
 @Controller
@@ -33,7 +35,7 @@ public class UserController {
     }
 
     @PostMapping("/create")
-    public String addNewUser(@ModelAttribute("user") UserDTO newlyCreatedUser){
+    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
 
         userService.save(newlyCreatedUser);
 
@@ -51,7 +53,7 @@ public class UserController {
     }
 
     @PostMapping("/update")
-    public String updateButtonRedirect(@ModelAttribute("user") UserDTO user){
+    public String updateButtonRedirect(@Valid @ModelAttribute("user") UserDTO user){
 
         userService.update(user);
 

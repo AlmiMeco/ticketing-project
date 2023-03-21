@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679434271904</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)">
+      <created>1679435167465</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679435167465</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +227,8 @@
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
     <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)" />
+    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,7 +14,7 @@ import javax.validation.constraints.*;
 public class UserDTO {
 
     @NotBlank
-    @Size(max = 20)
+    @Size(max = 20, min = 2)
     private String firstName, lastName;
 
     @NotBlank
@@ -25,11 +25,11 @@ public class UserDTO {
     @Pattern(regexp = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,}")
     private String passWord;
 
-    private boolean enabled;
-
     @NotBlank
     @Pattern(regexp = "\"^\\\\d{10}$\"")
     private String phone;
+
+    private boolean enabled;
 
     @NotNull // <-- @NotNull bc (@NotBlank is for String only)
     private RoleDTO role;
