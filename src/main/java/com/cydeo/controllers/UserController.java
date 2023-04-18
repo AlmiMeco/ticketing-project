@@ -15,24 +15,24 @@ import javax.xml.stream.events.StartElement;
 @RequestMapping("/user")
 public class UserController {
 
-//    private final RoleService roleService;
-//    private final UserService userService;
-//
-//    public UserController(RoleService role, UserService user) {
-//        this.roleService = role;
-//        this.userService = user;
-//    }
-//
-//
-//    @GetMapping("/create")
-//    public String create(Model model) {
-//
-//        model.addAttribute("user", new UserDTO());
-//        model.addAttribute("listOfRoles", roleService.findAll() );
-//        model.addAttribute("listOfUsers", userService.findAll());
-//
-//        return "user/create";
-//    }
+    private final RoleService roleService;
+    private final UserService userService;
+
+    public UserController(RoleService role, UserService user) {
+        this.roleService = role;
+        this.userService = user;
+    }
+
+
+    @GetMapping("/create")
+    public String create(Model model) {
+
+        model.addAttribute("user", new UserDTO());
+        model.addAttribute("listOfRoles", roleService.listAllRoles() );
+        model.addAttribute("listOfUsers", userService.listAllUsers() );
+
+        return "user/create";
+    }
 //
 //    @PostMapping("/create")
 //    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
