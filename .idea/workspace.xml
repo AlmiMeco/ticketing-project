@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/BaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681843707966</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)">
+      <created>1681844336920</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681844336920</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +209,7 @@
     <MESSAGE value="Spring MVC : DAY 10" />
     <MESSAGE value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)" />
+    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)" />
   </component>
 </project>
