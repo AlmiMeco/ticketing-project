@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(User Controller Validation added template added)&#10;*NO ACTUAL VALIDATION HAS BEEN ADDED TO THIS PROJECT*">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679008457093</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)">
+      <created>1681843707966</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681843707966</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
     <MESSAGE value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
+    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)" />
   </component>
 </project>
