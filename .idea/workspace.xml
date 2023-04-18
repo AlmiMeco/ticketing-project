@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/messages.properties" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring MVC : DAY 14 Part II &#10;(User Controller Validation added template added)&#10;*NO ACTUAL VALIDATION HAS BEEN ADDED TO THIS PROJECT*">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +53,27 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Almi's PC/IdeaProjects/ticketing-project&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;d8047f4e368e006b961481e14c0c7dcd&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/Almi's PC/IdeaProjects/ticketing-project",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "spring.configuration.checksum": "d8047f4e368e006b961481e14c0c7dcd"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="TicketingProjectMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ticketing-project" />
@@ -94,6 +97,14 @@
       <workItem from="1678413591448" duration="2941000" />
       <workItem from="1678416677274" duration="71000" />
       <workItem from="1678416753655" duration="320000" />
+      <workItem from="1679003774594" duration="5323000" />
+      <workItem from="1679066512380" duration="438000" />
+      <workItem from="1679067075486" duration="18000" />
+      <workItem from="1679078390900" duration="604000" />
+      <workItem from="1679090629758" duration="2810000" />
+      <workItem from="1679279830668" duration="87000" />
+      <workItem from="1679281346906" duration="588000" />
+      <workItem from="1679340255556" duration="2773000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -137,56 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678416518065</updated>
     </task>
-    <task id="LOCAL-00007" summary="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)">
-      <created>1679427302558</created>
+    <task id="LOCAL-00007" summary="Spring MVC : DAY 14 Finished (update &amp; delete features added)">
+      <created>1679008457093</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1679427302558</updated>
+      <updated>1679008457093</updated>
     </task>
-    <task id="LOCAL-00008" summary="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)">
-      <created>1679427955257</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679427955257</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive html files populated)">
-      <created>1679428108788</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679428108788</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)">
-      <created>1679428550398</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679428550398</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)">
-      <created>1679428826577</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679428826577</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)">
-      <created>1679434271904</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679434271904</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)">
-      <created>1679435167465</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1679435167465</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,23 +190,7 @@
     <MESSAGE value="Spring MVC: DAY 10  -&gt;   @2:19:00" />
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II Begins &#10;(task update bug fixed)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(/employee/pending-tasks &amp; /employee/archive :: View added)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive html files populated)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks page)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks &amp; archive :: Models (get) created)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(pending-tasks finished)" />
-    <MESSAGE value="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Part II &#10;(UserDTO Validation)" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NullPointerException" package="java.lang" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
   </component>
 </project>
