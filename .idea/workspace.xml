@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/mapper/RoleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/UserDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/UserDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/RoleServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681848359049</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )">
+      <created>1681857564483</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1681857564483</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +240,7 @@
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(User &amp;&amp; Role Tables created)" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Service pkg deleted *application NOT working* )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )" />
+    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
   </component>
 </project>
