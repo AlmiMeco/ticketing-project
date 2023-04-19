@@ -5,8 +5,10 @@ import com.cydeo.service.RoleService;
 import com.cydeo.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import javax.xml.stream.events.StartElement;
 
 @Controller
@@ -26,44 +28,44 @@ public class UserController {
     public String create(Model model) {
 
         model.addAttribute("user", new UserDTO());
-        model.addAttribute("listOfRoles", roleService.findAll() );
-        model.addAttribute("listOfUsers", userService.findAll());
+        model.addAttribute("listOfRoles", roleService.listAllRoles() );
+        model.addAttribute("listOfUsers", userService.listAllUsers() );
 
         return "user/create";
     }
-
-    @PostMapping("/create")
-    public String addNewUser(@ModelAttribute("user") UserDTO newlyCreatedUser){
-
-        userService.save(newlyCreatedUser);
-
-        return "redirect:/user/create";
-    }
-
-    @GetMapping("/update/{username}")
-    public String selectUserToUpdate(@PathVariable("username") String username, Model model) {
-
-        model.addAttribute("user", userService.findById(username));
-        model.addAttribute("listOfRoles", roleService.findAll());
-        model.addAttribute("listOfUsers", userService.findAll());
-
-        return "/user/update";
-    }
-
-    @PostMapping("/update")
-    public String updateButtonRedirect(@ModelAttribute("user") UserDTO user){
-
-        userService.update(user);
-
-        return "redirect:/user/create";
-    }
-
-    @GetMapping("/delete/{username}")
-    public String delete(@PathVariable("username") String username){
-
-        userService.deleteById(username);
-
-        return "redirect:/user/create";
-    }
+//
+//    @PostMapping("/create")
+//    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
+//
+//        userService.save(newlyCreatedUser);
+//
+//        return "redirect:/user/create";
+//    }
+//
+//    @GetMapping("/update/{username}")
+//    public String selectUserToUpdate(@PathVariable("username") String username, Model model) {
+//
+//        model.addAttribute("user", userService.findById(username));
+//        model.addAttribute("listOfRoles", roleService.findAll());
+//        model.addAttribute("listOfUsers", userService.findAll());
+//
+//        return "/user/update";
+//    }
+//
+//    @PostMapping("/update")
+//    public String updateButtonRedirect(@Valid @ModelAttribute("user") UserDTO user){
+//
+//        userService.update(user);
+//
+//        return "redirect:/user/create";
+//    }
+//
+//    @GetMapping("/delete/{username}")
+//    public String delete(@PathVariable("username") String username){
+//
+//        userService.deleteById(username);
+//
+//        return "redirect:/user/create";
+//    }
 
 }

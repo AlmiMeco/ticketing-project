@@ -38,6 +38,12 @@
                                                 <div class="form-group">
                                                     <label for="firstname" class="col-form-label">First Name</label>
                                                     <input id="firstname" type="text" placeholder="first name" th:field="*{firstName}" class="form-control" >
+                                                    <div class="invalid-feedback" th:if="${#fields.hasErrors('firstName')}">
+                                                        <ul>
+                                                            <li th:each="err : ${#fields.errors('firstName')}"
+                                                                th:text="${err}"></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -53,7 +59,7 @@
                                             <div class="col-sm-6 col-md-6">
                                                 <div class="form-group">
                                                     <label for="emailaddress" class="col-form-label">Email Address</label>
-                                                    <input id="emailaddress" type="text" placeholder="email address" th:field="*{userName}" class="form-control">>
+                                                    <input id="emailaddress" type="text" placeholder="email address" th:field="*{userName}" class="form-control">
                                                 </div>
                                             </div>
 

@@ -1,16 +1,20 @@
 package com.cydeo.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Role {
+@Entity
+@Table(name = "roles")
+public class Role extends BaseEntity{
 
-    private Long id;
+//    private Long id; --> ID (pk) is inherited from BaseEntity
     private String description;
 
 
