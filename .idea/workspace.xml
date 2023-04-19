@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/RoleDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/RoleDTOConverter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -199,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1681857564483</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Spring DATA : DAY 21 Part I&#10;&#10;( Role -&gt; converted to RoleDTO )">
+      <created>1681873897065</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1681873897065</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )">
+      <created>1681873976302</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1681873976302</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +256,8 @@
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Service pkg deleted *application NOT working* )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
+    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Role -&gt; converted to RoleDTO )" />
+    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )" />
   </component>
 </project>
