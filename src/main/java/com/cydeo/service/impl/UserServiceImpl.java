@@ -36,7 +36,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO findByUserName(String userName) {
-        return null;
+        return userMapper.convertToDto(userRepository.findByUserName(userName));
     }
 
     @Override
@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void deleteByUserName(String userName) {
-        
+
 
     }
 }
