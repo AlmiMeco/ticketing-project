@@ -35,7 +35,7 @@ public class UserController {
     }
 
     @PostMapping("/create")
-    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
+    public String addNewUser(@ModelAttribute("user") UserDTO newlyCreatedUser){
 
         userService.save(newlyCreatedUser);
 
