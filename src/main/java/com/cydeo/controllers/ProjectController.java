@@ -14,25 +14,25 @@ import java.util.List;
 @Controller
 @RequestMapping("/project")
 public class ProjectController {
-//
-//    private final UserService userService;
-//    private final ProjectService projectService;
-//
-//    public ProjectController(UserService userService, ProjectService projectService) {
-//        this.userService = userService;
-//        this.projectService = projectService;
-//    }
-//
-//    @GetMapping("/create")
-//    public String viewProject(Model model){
-//
-//        model.addAttribute("project", new ProjectDTO());
-//        model.addAttribute("listOfProjects", projectService.findAll());
-//        model.addAttribute("listOfManagers", userService.findManagers());
-//
-//        return "project/create";
-//    }
-//
+
+    private final UserService userService;
+    private final ProjectService projectService;
+
+    public ProjectController(UserService userService, ProjectService projectService) {
+        this.userService = userService;
+        this.projectService = projectService;
+    }
+
+    @GetMapping("/create")
+    public String viewProject(Model model){
+
+        model.addAttribute("project", new ProjectDTO());
+        model.addAttribute("listOfProjects", projectService.findAll());
+        model.addAttribute("listOfManagers", userService.findManagers());
+
+        return "project/create";
+    }
+
 //    @PostMapping("/create")
 //    public String addProjectButton(@ModelAttribute("project") ProjectDTO project, Model model){
 //
