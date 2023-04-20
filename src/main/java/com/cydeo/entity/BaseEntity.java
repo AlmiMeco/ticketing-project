@@ -17,10 +17,14 @@ public class BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private Long insertUserId;
-    private Long lastUpdateUserId;
 
+    @Column(nullable = false, updatable = false)
+    private Long insertUserId;
+    @Column(nullable = false, updatable = false)
     private LocalDateTime insertDateTime;
+    @Column(nullable = false)
+    private Long lastUpdateUserId;
+    @Column(nullable = false)
     private LocalDateTime lastUpdateDateTime;
 
 //    -> Used to differentiate if User will be displayed in Front-End or not

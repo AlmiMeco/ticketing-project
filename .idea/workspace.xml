@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( User delete method updated -&gt; User will be deleted form UI :: User will remain in the dB )">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( PrePersist &amp;&amp; PreUpdate methods added to BaseEntity )">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,7 @@
       <workItem from="1679281346906" duration="588000" />
       <workItem from="1679340255556" duration="2773000" />
       <workItem from="1681945999483" duration="6986000" />
-      <workItem from="1682018024108" duration="4915000" />
+      <workItem from="1682018024108" duration="5297000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -267,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682020942049</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( PrePersist &amp;&amp; PreUpdate methods added to BaseEntity )">
+      <created>1682023850516</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1682023850516</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +322,7 @@
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserServiceImpl update() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController delete() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( User delete method updated -&gt; User will be deleted form UI :: User will remain in the dB )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( User delete method updated -&gt; User will be deleted form UI :: User will remain in the dB )" />
+    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( PrePersist &amp;&amp; PreUpdate methods added to BaseEntity )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( PrePersist &amp;&amp; PreUpdate methods added to BaseEntity )" />
   </component>
 </project>
