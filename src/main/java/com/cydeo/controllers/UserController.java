@@ -51,15 +51,15 @@ public class UserController {
 
         return "/user/update";
     }
-//
-//    @PostMapping("/update")
-//    public String updateButtonRedirect(@Valid @ModelAttribute("user") UserDTO user){
-//
-//        userService.update(user);
-//
-//        return "redirect:/user/create";
-//    }
-//
+
+    @PostMapping("/update")
+    public String updateButtonRedirect(@ModelAttribute("user") UserDTO user){
+
+        userService.update(user);
+
+        return "redirect:/user/create";
+    }
+
 //    @GetMapping("/delete/{username}")
 //    public String delete(@PathVariable("username") String username){
 //
