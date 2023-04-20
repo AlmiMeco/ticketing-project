@@ -22,4 +22,6 @@ public class BaseEntity {
     private LocalDateTime insertDateTime;
     private LocalDateTime lastUpdateDateTime;
 
+    private Boolean isDeleted = false;
+
 }

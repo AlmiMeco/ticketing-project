@@ -61,9 +61,9 @@ public class UserController {
     }
 
     @GetMapping("/delete/{username}")
-    public String delete(@PathVariable("username") String username){
+    public String delete(@PathVariable("username") String userName){
 
-        userService.deleteByUserName(username);
+        userService.deleteFromUiNotFromDb(userName);
 
         return "redirect:/user/create";
     }

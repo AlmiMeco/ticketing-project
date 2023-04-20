@@ -36,7 +36,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO findByUserName(String userName) {
+
         return userMapper.convertToDto(userRepository.findByUserName(userName));
+
     }
 
     @Override
@@ -53,11 +55,13 @@ public class UserServiceImpl implements UserService {
 
         userRepository.delete(user);
 
+        user.setIsDeleted(true);
+
 //        userRepository.deleteByUserName(userName);
 
     }
 
-    @Override
+    @Override // -> returning UserDTO (Security reasons)
     public UserDTO update(UserDTO user) {
 
         // Find user
@@ -74,6 +78,17 @@ public class UserServiceImpl implements UserService {
 
 
         return findByUserName(user.getUserName());
+
+    }
+
+    @Override
+    public void deleteFromUiNotFromDb(String userName) {
+
+        User user = userRepository.findByUserName(userName);
+
+        user.setIsDeleted(true);
+
+        userRepository.save(user);
 
     }
 }
