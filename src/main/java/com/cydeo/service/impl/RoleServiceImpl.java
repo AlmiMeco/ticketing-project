@@ -30,7 +30,6 @@ public class RoleServiceImpl implements RoleService {
 
         // Role (entity) needs to be converted to -> RoleDTO (DTO)
         // the conversion is done via Model-Mapper (external lib)
-
         return roleList.stream()
 //               .map(i -> roleMapper.convertToDto(i)) ->  both .map() impl are the same
                  .map(roleMapper::convertToDto)

@@ -33,24 +33,24 @@ public class UserController {
 
         return "user/create";
     }
-//
-//    @PostMapping("/create")
-//    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
-//
-//        userService.save(newlyCreatedUser);
-//
-//        return "redirect:/user/create";
-//    }
-//
-//    @GetMapping("/update/{username}")
-//    public String selectUserToUpdate(@PathVariable("username") String username, Model model) {
-//
-//        model.addAttribute("user", userService.findById(username));
-//        model.addAttribute("listOfRoles", roleService.findAll());
-//        model.addAttribute("listOfUsers", userService.findAll());
-//
-//        return "/user/update";
-//    }
+
+    @PostMapping("/create")
+    public String addNewUser(@Valid @ModelAttribute("user") UserDTO newlyCreatedUser){
+
+        userService.save(newlyCreatedUser);
+
+        return "redirect:/user/create";
+    }
+
+    @GetMapping("/update/{username}")
+    public String selectUserToUpdate(@PathVariable("username") String username, Model model) {
+
+        model.addAttribute("user", userService.findByUserName(username));
+        model.addAttribute("listOfRoles", roleService.listAllRoles());
+        model.addAttribute("listOfUsers", userService.listAllUsers());
+
+        return "/user/update";
+    }
 //
 //    @PostMapping("/update")
 //    public String updateButtonRedirect(@Valid @ModelAttribute("user") UserDTO user){
