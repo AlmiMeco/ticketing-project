@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/ProjectRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/ProjectRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/ProjectService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/ProjectService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +121,7 @@
       <workItem from="1679340255556" duration="2773000" />
       <workItem from="1681945999483" duration="6986000" />
       <workItem from="1682018024108" duration="6642000" />
-      <workItem from="1682113200544" duration="3391000" />
+      <workItem from="1682113200544" duration="5164000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -324,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682115170361</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )">
+      <created>1682116788167</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1682116788167</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +363,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring MVC: DAY 10  -&gt;   @2:19:00" />
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
     <MESSAGE value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
@@ -379,6 +387,7 @@
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectDTOConverter Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectMapper Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
+    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )" />
   </component>
 </project>
