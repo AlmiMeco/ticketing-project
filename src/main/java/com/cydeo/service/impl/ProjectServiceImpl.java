@@ -1,6 +1,7 @@
 package com.cydeo.service.impl;
 
 import com.cydeo.dto.ProjectDTO;
+import com.cydeo.enums.Status;
 import com.cydeo.mapper.ProjectMapper;
 import com.cydeo.repository.ProjectRepository;
 import com.cydeo.service.ProjectService;
@@ -42,6 +43,11 @@ public class ProjectServiceImpl implements ProjectService {
 
     @Override
     public void save(ProjectDTO dto) {
+
+        // fixes whitelabel error '500'  "project.projectStatus.value" (template: "project/create" - line 135, col 53)
+        dto.setProjectStatus(Status.OPEN);
+
+        projectRepository.save(projectMapper.convertToEntity(dto));
 
     }
 

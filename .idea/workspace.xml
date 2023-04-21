@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectMapper Created )">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/ProjectController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +119,7 @@
       <workItem from="1679340255556" duration="2773000" />
       <workItem from="1681945999483" duration="6986000" />
       <workItem from="1682018024108" duration="6642000" />
-      <workItem from="1682113200544" duration="1842000" />
+      <workItem from="1682113200544" duration="3391000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -321,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682025214065</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )">
+      <created>1682115170361</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1682115170361</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +354,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring MVC: DAY 10  -&gt;   @1:02:41" />
     <MESSAGE value="Spring MVC: DAY 10  -&gt;   @2:19:00" />
     <MESSAGE value="gitignore 1" />
     <MESSAGE value="Spring MVC : DAY 10" />
@@ -376,6 +378,7 @@
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Repo Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectDTOConverter Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectMapper Created )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectMapper Created )" />
+    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
   </component>
 </project>
