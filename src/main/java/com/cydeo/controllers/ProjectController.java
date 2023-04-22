@@ -57,24 +57,24 @@ public class ProjectController {
 
         return "redirect:/project/create";
     }
-//
-//    @GetMapping("/update/{projectCode}")
-//    public String updateProject(@PathVariable("projectCode") String projectCode, Model model){
-//
-//        model.addAttribute("project", projectService.findById(projectCode));
-//        model.addAttribute("listOfProjects", projectService.findAll());
-//        model.addAttribute("listOfManagers", userService.findManagers());
-//
-//        return "project/update";
-//    }
-//
-//    @PostMapping("/update")
-//    public String updateProjectRedirect(@ModelAttribute("project") ProjectDTO project){
-//
-//        projectService.update(project);
-//
-//        return "redirect:/project/create";
-//    }
+
+    @GetMapping("/update/{projectCode}")
+    public String updateProject(@PathVariable("projectCode") String projectCode, Model model){
+
+        model.addAttribute("project", projectService.getByProjectCode(projectCode));
+        model.addAttribute("listOfProjects", projectService.listAllProjects());
+        model.addAttribute("listOfManagers", userService.listAllByRole("manager"));
+
+        return "project/update";
+    }
+
+    @PostMapping("/update")
+    public String updateProjectRedirect(@ModelAttribute("project") ProjectDTO project){
+
+        projectService.update(project);
+
+        return "redirect:/project/create";
+    }
 //
 //    @GetMapping("/project-status")
 //    public String status(Model model){
