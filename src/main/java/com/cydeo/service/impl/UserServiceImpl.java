@@ -36,7 +36,9 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDTO findByUserName(String userName) {
+
         return userMapper.convertToDto(userRepository.findByUserName(userName));
+
     }
 
     @Override
@@ -53,11 +55,13 @@ public class UserServiceImpl implements UserService {
 
         userRepository.delete(user);
 
+        user.setIsDeleted(true);
+
 //        userRepository.deleteByUserName(userName);
 
     }
 
-    @Override
+    @Override // -> returning UserDTO (Security reasons)
     public UserDTO update(UserDTO user) {
 
         // Find user
@@ -74,6 +78,29 @@ public class UserServiceImpl implements UserService {
 
 
         return findByUserName(user.getUserName());
+
+    }
+
+    @Override
+    public void deleteFromUiNotFromDb(String userName) {
+
+        User user = userRepository.findByUserName(userName);
+
+        user.setIsDeleted(true);
+
+        userRepository.save(user);
+
+    }
+
+    @Override
+    public List<UserDTO> listAllByRole(String role) {
+
+        List<User> users = userRepository.findByRoleDescriptionIgnoreCase(role);
+
+        /* Stream is used bc Converter converts (ENTITY -> DTO) :: We need to convert ( List<Entity>  -> List<DTO> ) */
+        return users.stream()
+                .map(userMapper::convertToDto)
+                .collect(Collectors.toList());
 
     }
 }

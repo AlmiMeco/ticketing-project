@@ -13,6 +13,9 @@ import javax.validation.constraints.*;
 @NoArgsConstructor
 public class UserDTO {
 
+//    Added as foreignKey for (ProjectTable)
+    private Long id;
+
     @NotBlank
     @Size(max = 20, min = 2)
     private String firstName, lastName;
