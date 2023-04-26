@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( UPDATE PROJECT FEATURE NOT WORKING )">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Task.java" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/TaskService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Task.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -120,7 +120,7 @@
       <workItem from="1681945999483" duration="6986000" />
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
-      <workItem from="1682545713495" duration="2125000" />
+      <workItem from="1682545713495" duration="2824000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -339,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682120944011</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )">
+      <created>1682547911086</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1682547911086</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +376,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring MVC : DAY 10" />
     <MESSAGE value="Spring MVC : DAY 14 Finished (update &amp; delete features added)" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(PostgreSQL embedded :: application.properties config)" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)" />
@@ -394,6 +400,7 @@
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Complete Project feature finished! )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Complete Project feature finished! )" />
+    <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )" />
   </component>
 </project>
