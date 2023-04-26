@@ -4,6 +4,8 @@ import com.cydeo.dto.TaskDTO;
 import com.cydeo.enums.Status;
 //import com.cydeo.service.ProjectService;
 //import com.cydeo.service.TaskService;
+import com.cydeo.service.ProjectService;
+import com.cydeo.service.TaskService;
 import com.cydeo.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -13,28 +15,28 @@ import org.springframework.web.bind.annotation.*;
 @Controller
 public class TaskController {
 
-//    private final ProjectService projectService;
-//    private final UserService userService;
-//    private final TaskService taskService;
-//
-//    public TaskController(ProjectService projectService, UserService userService, TaskService taskService) {
-//        this.projectService = projectService;
-//        this.userService = userService;
-//        this.taskService = taskService;
-//    }
-//
-//    @GetMapping("/create")
-//    public String create(Model model){
-//
-//        model.addAttribute("task", new TaskDTO());
-//        model.addAttribute("listOfProjects", projectService.findAll());
-//        model.addAttribute("listOfEmployees", userService.findEmployees());
-//        model.addAttribute("listOfTasks", taskService.findAll());
-//
-//
-//        return "task/create";
-//    }
-//
+    private final ProjectService projectService;
+    private final UserService userService;
+    private final TaskService taskService;
+
+    public TaskController(ProjectService projectService, UserService userService, TaskService taskService) {
+        this.projectService = projectService;
+        this.userService = userService;
+        this.taskService = taskService;
+    }
+
+    @GetMapping("/create")
+    public String create(Model model){
+
+        model.addAttribute("task", new TaskDTO());
+        model.addAttribute("listOfProjects", projectService.listAllProjects());
+        model.addAttribute("listOfEmployees", userService.listAllByRole("manager"));
+        model.addAttribute("listOfTasks", taskService.listAllTasks());
+
+
+        return "task/create";
+    }
+
 //    @PostMapping("/create")
 //    public String saveTaskButn(@ModelAttribute("task") TaskDTO task){
 //
