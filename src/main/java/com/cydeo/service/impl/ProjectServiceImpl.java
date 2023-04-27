@@ -8,8 +8,8 @@ import com.cydeo.enums.Status;
 import com.cydeo.mapper.ProjectMapper;
 import com.cydeo.mapper.UserMapper;
 import com.cydeo.repository.ProjectRepository;
-import com.cydeo.repository.UserRepository;
 import com.cydeo.service.ProjectService;
+import com.cydeo.service.TaskService;
 import com.cydeo.service.UserService;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -24,13 +24,15 @@ public class ProjectServiceImpl implements ProjectService {
     private final ProjectMapper projectMapper;
     private final UserService userService;
     private final UserMapper userMapper;
+    private final TaskService taskService;
 
 
-    public ProjectServiceImpl(ProjectRepository projectRepository, ProjectMapper projectMapper, UserService userService, UserMapper userMapper) {
+    public ProjectServiceImpl(ProjectRepository projectRepository, ProjectMapper projectMapper, UserService userService, UserMapper userMapper, TaskService taskService) {
         this.projectRepository = projectRepository;
         this.projectMapper = projectMapper;
         this.userService = userService;
         this.userMapper = userMapper;
+        this.taskService = taskService;
     }
 
 
@@ -119,8 +121,8 @@ public class ProjectServiceImpl implements ProjectService {
         return projectsBelongingToManager.stream()
                 .map(project -> {
                     ProjectDTO dto = projectMapper.convertToDto(project);
-                    dto.setUnfinishedTaskCounts(3);
-                    dto.setCompletedTaskCounts(4);
+                    dto.setUnfinishedTaskCounts(taskService.getUnfinishedTaskCount(project.getProjectCode())); // {field in DTO ; but NOT Entity}
+                    dto.setCompletedTaskCounts(taskService.getFinishedTaskCount(project.getProjectCode()));  // {field in DTO ; but NOT Entity}
                     return dto;
                 })
                 .collect(Collectors.toList());

@@ -77,7 +77,7 @@ public class ProjectController {
     }
 
     @GetMapping("/project-status")
-    public String status(Model model){
+    public String projectStatus(Model model){
 
         List<ProjectDTO> projectDTOS = projectService.listAllProjectDetails();
 
