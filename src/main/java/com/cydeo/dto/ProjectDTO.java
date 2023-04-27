@@ -13,6 +13,9 @@ import java.time.LocalDate;
 @NoArgsConstructor
 public class ProjectDTO {
 
+
+    private Long id;
+    // <- Resolves ( object references an unsaved transient instance - save the transient instance before flushing  )
     private String projectName, projectCode;
 
     private UserDTO assignedManager;

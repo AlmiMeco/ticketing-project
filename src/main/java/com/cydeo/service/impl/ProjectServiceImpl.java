@@ -92,7 +92,7 @@ public class ProjectServiceImpl implements ProjectService {
 
         Project project = projectRepository.findByProjectCode(projectCode);
 
-        project.setProjectStatus(Status.COMPLETED);
+        project.setProjectStatus(Status.COMPLETE);
 
         projectRepository.save(project);
 

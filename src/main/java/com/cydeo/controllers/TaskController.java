@@ -30,20 +30,20 @@ public class TaskController {
 
         model.addAttribute("task", new TaskDTO());
         model.addAttribute("listOfProjects", projectService.listAllProjects());
-        model.addAttribute("listOfEmployees", userService.listAllByRole("manager"));
+        model.addAttribute("listOfEmployees", userService.listAllByRole("employee"));
         model.addAttribute("listOfTasks", taskService.listAllTasks());
 
 
         return "task/create";
     }
 
-//    @PostMapping("/create")
-//    public String saveTaskButn(@ModelAttribute("task") TaskDTO task){
-//
-//        taskService.save(task);
-//
-//        return "redirect:/task/create";
-//    }
+    @PostMapping("/create")
+    public String saveTaskButn(@ModelAttribute("task") TaskDTO task){
+
+        taskService.save(task);
+
+        return "redirect:/task/create";
+    }
 //
 //@GetMapping("/delete/{taskID}")
 //    public String deleteTaskButn(@PathVariable("taskID") Long taskID){
