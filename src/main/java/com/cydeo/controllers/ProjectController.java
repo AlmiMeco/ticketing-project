@@ -75,21 +75,17 @@ public class ProjectController {
 
         return "redirect:/project/create";
     }
-//
-//    @GetMapping("/project-status")
-//    public String status(Model model){
-//
-//        UserDTO manager = userService.findById("delisa@cydeo.com"); // <- email (unique ID) of (*) manager
-//
-//        List<ProjectDTO> projectDTOS = projectService.getCountedListOfTasks(manager);
-//
-//        // .findAll() will not work bc we are getting only (selected managers) project info + we are looking for completed/unFinished task count
-//
-//        model.addAttribute("listOfProjects", projectDTOS);
-//
-//
-//        return "/manager/project-status";
-//    }
+
+    @GetMapping("/project-status")
+    public String status(Model model){
+
+        List<ProjectDTO> projectDTOS = projectService.listAllProjectDetails();
+
+        model.addAttribute("listOfProjects", projectDTOS);
+
+
+        return "/manager/project-status";
+    }
 
 
 }
