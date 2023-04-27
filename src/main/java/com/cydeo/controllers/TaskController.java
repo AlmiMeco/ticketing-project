@@ -70,13 +70,13 @@ public class TaskController {
     /* Both Methods work the exact same (if pathVariable {taskID} is the same in the URL path as it is in the field)
       @PathVariable is not requires :: Spring is smart enough to automatically assign it to the correct */
 
-//    @PostMapping("/update/{taskID}")
-//    public String updateTaskAck(TaskDTO task){
-//
-//        taskService.update(task);
-//
-//        return "redirect:/task/create";
-//    }
+    @PostMapping("/update/{taskID}")
+    public String updateTaskAck(TaskDTO task){
+
+        taskService.update(task);
+
+        return "redirect:/task/create";
+    }
 
 //
 ////    @PostMapping("/update/{taskID}")

@@ -32,16 +32,18 @@
                                 <div class="panel-body">
 
                                     <!-- ------------------------FORM START----------------------------- -->
-                                    <form th:action="@{/task/update/{taskID}(taskID=${task.getTaskID()})}" method="post" th:object="${task}" >
+                                    <form th:action="@{/task/update/{taskID}(taskID=${task.getTaskID()})}" method="post"
+                                          th:object="${task}" >
 
                                         <div class="row">
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label>Project</label>
-                                                    <select name="project" th:field="*{project}" class="custom-select">
-                                                        <option th:value="' '" th:text="Select"  ></option>
-                                                        <option th:each="project : ${listOfProjects}" th:text="${project.projectName}"
-                                                                th:value="${project.projectCode}" ></option>
+                                                    <select name="project" class="custom-select" th:field="*{project}">
+<!--                                                        <option th:value="' '" th:text="Select"  ></option>-->
+                                                        <option th:each="project : ${listOfProjects}"
+                                                                th:value="${project.projectCode}"
+                                                                th:text="${project.projectName}" ></option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -51,9 +53,10 @@
                                             <div class="col">
                                                 <div class="form-group">
                                                     <label>Assigned Employee</label>
-                                                    <select name="assignedemployee" th:field="*{assignedEmployee}" class="custom-select">
-                                                        <option th:value="' '" th:text="Select" ></option>
-                                                        <option th:each="employee : ${listOfEmployees}" th:text="${employee.firstName + ' ' + employee.lastName}"
+                                                    <select name="assignedemployee" class="custom-select" th:field="*{assignedEmployee}">
+<!--                                                        <option  th:text="Select" ></option>-->
+                                                        <option th:each="employee : ${listOfEmployees}"
+                                                                th:text="${employee.firstName + ' ' + employee.lastName}"
                                                                 th:value="${employee.userName}" ></option>
                                                     </select>
                                                 </div>

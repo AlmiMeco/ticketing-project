@@ -39,8 +39,9 @@
                                                 <div class="form-group">
                                                     <label>Project</label>
                                                     <select name="project" th:field="*{project}" class="custom-select">
-                                                        <option th:value="' '" th:text="Select"  ></option>
-                                                        <option th:each="project : ${listOfProjects}" th:text="${project.projectName}"
+<!--                                                        <option th:value="' '" th:text="Select"  ></option>-->
+                                                        <option th:each="project : ${listOfProjects}"
+                                                                th:text="${project.projectName}"
                                                                 th:value="${project.projectCode}" ></option>
                                                     </select>
                                                 </div>
@@ -52,8 +53,9 @@
                                                 <div class="form-group">
                                                     <label>Assigned Employee</label>
                                                     <select name="assignedemployee" th:field="*{assignedEmployee}" class="custom-select">
-                                                        <option th:value="' '" th:text="Select" ></option>
-                                                        <option th:each="employee : ${listOfEmployees}" th:text="${employee.firstName + ' ' + employee.lastName}"
+<!--                                                        <option th:value="' '" th:text="Select" ></option>-->
+                                                        <option th:each="employee : ${listOfEmployees}"
+                                                                th:text="${employee.firstName + ' ' + employee.lastName}"
                                                                 th:value="${employee.userName}" ></option>
                                                     </select>
                                                 </div>
