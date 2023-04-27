@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; create() methods unCommented )">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/controllers/TaskController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/ProjectDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/ProjectDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/enums/Status.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/enums/Status.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/TaskRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/repository/TaskRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/TaskServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +121,7 @@
       <workItem from="1681945999483" duration="6986000" />
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
-      <workItem from="1682545713495" duration="8709000" />
+      <workItem from="1682545713495" duration="10334000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -372,7 +368,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682549901790</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )">
+      <created>1682568644174</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1682568644174</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(User &amp;&amp; Role Tables created)" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Service pkg deleted *application NOT working* )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
@@ -427,6 +429,7 @@
     <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskService Created )" />
     <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskServiceImpl, TaskRepository, and TaskMapper Created )" />
     <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; create() methods unCommented )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; create() methods unCommented )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )" />
   </component>
 </project>

@@ -44,32 +44,32 @@ public class TaskController {
 
         return "redirect:/task/create";
     }
-//
-//@GetMapping("/delete/{taskID}")
-//    public String deleteTaskButn(@PathVariable("taskID") Long taskID){
-//
-//        taskService.deleteById(taskID);
-//
-//        return "redirect:/task/create";
-//    }
-//
-//    @GetMapping("/update/{taskID}")
-//    public String updateTaskRequest(@PathVariable("taskID") Long taskID, Model model){
-//
-//        model.addAttribute("task", taskService.findById(taskID));
-//        model.addAttribute("listOfProjects", projectService.findAll());
-//        model.addAttribute("listOfEmployees", userService.findEmployees());
-//        model.addAttribute("listOfTasks", taskService.findAll());
-//
-//        return "task/update";
-//    }
-//
-//
-////----------------------------------------------------------------------------------------------------------------------
-//
-//    /* Both Methods work the exact same (if pathVariable {taskID} is the same in the URL path as it is in the field)
-//      @PathVariable is not requires :: Spring is smart enough to automatically assign it to the correct */
-//
+
+@GetMapping("/delete/{taskID}")
+    public String deleteTaskButn(@PathVariable("taskID") Long taskID){
+
+        taskService.delete(taskID);
+
+        return "redirect:/task/create";
+    }
+
+    @GetMapping("/update/{taskID}")
+    public String updateTaskRequest(@PathVariable("taskID") Long taskID, Model model){
+
+        model.addAttribute("task", taskService.findById(taskID));
+        model.addAttribute("listOfProjects", projectService.listAllProjects());
+        model.addAttribute("listOfEmployees", userService.listAllByRole("employees"));
+        model.addAttribute("listOfTasks", taskService.listAllTasks());
+
+        return "task/update";
+    }
+
+
+//----------------------------------------------------------------------------------------------------------------------
+
+    /* Both Methods work the exact same (if pathVariable {taskID} is the same in the URL path as it is in the field)
+      @PathVariable is not requires :: Spring is smart enough to automatically assign it to the correct */
+
 //    @PostMapping("/update/{taskID}")
 //    public String updateTaskAck(TaskDTO task){
 //
@@ -77,7 +77,7 @@ public class TaskController {
 //
 //        return "redirect:/task/create";
 //    }
-//
+
 //
 ////    @PostMapping("/update/{taskID}")
 ////    public String updateTaskAck(@PathVariable("taskID") Long taskID, TaskDTO task){
