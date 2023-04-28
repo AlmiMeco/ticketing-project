@@ -23,4 +23,6 @@ public interface TaskService {
 
     int getFinishedTaskCount(String projectCode);
 
+    void deleteByProject(ProjectDTO dto);
+
 }
