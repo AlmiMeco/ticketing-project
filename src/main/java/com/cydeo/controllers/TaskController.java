@@ -78,40 +78,40 @@ public class TaskController {
         return "redirect:/task/create";
     }
 
+
+//    @PostMapping("/update/{taskID}")
+//    public String updateTaskAck(@PathVariable("taskID") Long taskID, TaskDTO task){
 //
-////    @PostMapping("/update/{taskID}")
-////    public String updateTaskAck(@PathVariable("taskID") Long taskID, TaskDTO task){
-////
-////        task.setTaskID(taskID);
-////
-////        // since we do not assign an ID when creating/updating a task we will bring the id via @PathVariable
-////        // and assign the old/existing taskID to the new Task
-////
-////        taskService.update(task);
-////
-////        return "redirect:/task/create";
-////    }
+//        task.setTaskID(taskID);
 //
+//        // since we do not assign an ID when creating/updating a task we will bring the id via @PathVariable
+//        // and assign the old/existing taskID to the new Task
 //
+//        taskService.update(task);
 //
+//        return "redirect:/task/create";
+//    }
+
+
+
 ////----------------------------------------------------------------------------------------------------------------------
-//
-//
-//    @GetMapping("/employee/pending-tasks")
-//    public String employeePendingTasks(Model model){
-//
-//        model.addAttribute("tasks", taskService.findAllIncompleteTasks(Status.COMPLETED));
-//
-//        return "/task/pending-tasks";
-//    }
-//
-//    @GetMapping("/employee/archive")
-//    public String employeeArchive(Model model){
-//
-//        model.addAttribute("tasks", taskService.findAllCompleteTasks(Status.COMPLETED));
-//
-//        return "/task/archive";
-//    }
+
+
+    @GetMapping("/employee/pending-tasks")
+    public String employeePendingTasks(Model model){
+
+        model.addAttribute("tasks", taskService.listAllIncompleteTasks(Status.COMPLETE));
+
+        return "/task/pending-tasks";
+    }
+
+    @GetMapping("/employee/archive")
+    public String employeeArchive(Model model){
+
+        model.addAttribute("tasks", taskService.listAllCompleteTasks(Status.COMPLETE));
+
+        return "/task/archive";
+    }
 //
 //    @GetMapping("/employee/edit/{id}")
 //    public String editEmployeePendingTask(@PathVariable Long id, Model model){

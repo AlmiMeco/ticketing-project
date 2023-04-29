@@ -107,6 +107,7 @@ public class ProjectServiceImpl implements ProjectService {
 
         projectRepository.save(project);
 
+        taskService.completeByProject(projectMapper.convertToDto(project));
 
 
     }

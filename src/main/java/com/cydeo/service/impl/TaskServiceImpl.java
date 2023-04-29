@@ -116,5 +116,38 @@ public class TaskServiceImpl implements TaskService {
 
     }
 
+    @Override
+    public void completeByProject(ProjectDTO dto) {
+
+        Project project = projectMapper.convertToEntity(dto);
+
+        List<Task> taskList = taskRepository.findAllByProject(project);
+
+        taskList.forEach(task -> task.setTaskStatus(Status.COMPLETE));
+
+    }
+
+    @Override
+    public List<TaskDTO> listAllIncompleteTasks(Status status) {
+
+        return  taskRepository.findAllByTaskStatus(status).stream()
+                .map(taskMapper::convertToDto)
+                .collect(Collectors.toList());
+
+        // ^^^ Is returning a List of All Tasks(by status) :: Not showing Tasks (specific to an employee)
+
+    }
+
+    @Override
+    public List<TaskDTO> listAllCompleteTasks(Status status) {
+
+
+        return taskRepository.findAllByTaskStatusIsNot(status).stream()
+                .map(taskMapper::convertToDto)
+                .collect(Collectors.toList());
+    }
+
+
+
 
 }
