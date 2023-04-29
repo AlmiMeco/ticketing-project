@@ -2,8 +2,10 @@ package com.cydeo.service.impl;
 
 import com.cydeo.dto.ProjectDTO;
 import com.cydeo.dto.TaskDTO;
+import com.cydeo.entity.Project;
 import com.cydeo.entity.Task;
 import com.cydeo.enums.Status;
+import com.cydeo.mapper.ProjectMapper;
 import com.cydeo.mapper.TaskMapper;
 import com.cydeo.repository.TaskRepository;
 import com.cydeo.service.TaskService;
@@ -19,10 +21,13 @@ public class TaskServiceImpl implements TaskService {
 
     private final TaskRepository taskRepository;
     private final TaskMapper taskMapper;
+    private final ProjectMapper projectMapper;
 
-    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper) {
+
+    public TaskServiceImpl(TaskRepository taskRepository, TaskMapper taskMapper, ProjectMapper projectMapper) {
         this.taskRepository = taskRepository;
         this.taskMapper = taskMapper;
+        this.projectMapper = projectMapper;
     }
 
 
@@ -73,16 +78,16 @@ public class TaskServiceImpl implements TaskService {
     @Override
     public void delete(Long id) {
 
-        taskRepository.deleteById(id); // <- this is NOT a soft-delete (UI && dB delete)
+//        taskRepository.deleteById(id); // <- this is NOT a soft-delete (UI && dB delete)
 
         /* Ozzy method (returns Optional<T>) --> This IS a soft-delete */
 
-//        Optional<Task> foundTask = taskRepository.findById(id);
-//
-//        if(foundTask.isPresent()){
-//            foundTask.get().setIsDeleted(true);
-//            taskRepository.save(foundTask.get());
-//        }
+        Optional<Task> foundTask = taskRepository.findById(id);
+
+        if(foundTask.isPresent()){
+            foundTask.get().setIsDeleted(true);
+            taskRepository.save(foundTask.get());
+        }
 
 
     }
@@ -99,6 +104,50 @@ public class TaskServiceImpl implements TaskService {
         return taskRepository.totalCompletedTasks(projectCode);
 
     }
+
+    @Override
+    public void deleteByProject(ProjectDTO dto) {
+
+        Project project = projectMapper.convertToEntity(dto);
+
+        List<Task> taskList = taskRepository.findAllByProject(project);
+
+        taskList.forEach(task -> delete(task.getId()));
+
+    }
+
+    @Override
+    public void completeByProject(ProjectDTO dto) {
+
+        Project project = projectMapper.convertToEntity(dto);
+
+        List<Task> taskList = taskRepository.findAllByProject(project);
+
+        taskList.forEach(task -> task.setTaskStatus(Status.COMPLETE));
+
+    }
+
+    @Override
+    public List<TaskDTO> listAllIncompleteTasks(Status status) {
+
+        return  taskRepository.findAllByTaskStatus(status).stream()
+                .map(taskMapper::convertToDto)
+                .collect(Collectors.toList());
+
+        // ^^^ Is returning a List of All Tasks(by status) :: Not showing Tasks (specific to an employee)
+
+    }
+
+    @Override
+    public List<TaskDTO> listAllCompleteTasks(Status status) {
+
+
+        return taskRepository.findAllByTaskStatusIsNot(status).stream()
+                .map(taskMapper::convertToDto)
+                .collect(Collectors.toList());
+    }
+
+
 
 
 }

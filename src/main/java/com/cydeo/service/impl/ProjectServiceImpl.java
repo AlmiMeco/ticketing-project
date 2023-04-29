@@ -88,12 +88,13 @@ public class ProjectServiceImpl implements ProjectService {
     public void delete(String projectCode) {
 
         Project project = projectRepository.findByProjectCode(projectCode);
-
         project.setIsDeleted(true);
+
+        project.setProjectCode(project.getProjectCode() + "--" + project.getId()); // SP00 ... -> ... SP00--01
 
         projectRepository.save(project);
 
-
+        taskService.deleteByProject(projectMapper.convertToDto(project));
 
     }
 
@@ -105,6 +106,9 @@ public class ProjectServiceImpl implements ProjectService {
         project.setProjectStatus(Status.COMPLETE);
 
         projectRepository.save(project);
+
+        taskService.completeByProject(projectMapper.convertToDto(project));
+
 
     }
 
