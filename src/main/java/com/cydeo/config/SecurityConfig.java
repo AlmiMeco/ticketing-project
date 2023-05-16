@@ -37,11 +37,16 @@ public class SecurityConfig {
 
     }
 
-
+/** FILTERING WHO (AUTHENTICATING) CAN ACCESS WHICH PAGES (AUTHORIZING) **/
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        return http.authorizeRequests().antMatchers(
+        return http.authorizeRequests()
+                .antMatchers("/task/**").hasRole("MANAGER")
+                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
+                .antMatchers("/project/**").hasRole("MANAGER")
+                .antMatchers("/user/**").hasRole("ADMIN")
+                .antMatchers(
                         "/",
                         "/login",
                         "/fragments/**",

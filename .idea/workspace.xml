@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -434,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684262574244</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
+      <created>1684272358194</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1684272358194</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserDTOConverter fixed {Role -&gt; RoleDTO by converter}  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController selectUserToUpdate() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserServiceImpl update() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController delete() fixed  )" />
@@ -489,6 +495,7 @@
     <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;(projectController -&gt; ProjectList feature added)" />
     <MESSAGE value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
     <MESSAGE value="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)" />
+    <MESSAGE value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
   </component>
 </project>
