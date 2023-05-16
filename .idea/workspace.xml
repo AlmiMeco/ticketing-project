@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" root0="SKIP_INSPECTION" />
@@ -425,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684262396607</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)">
+      <created>1684262574244</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1684262574244</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
