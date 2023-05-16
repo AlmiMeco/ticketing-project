@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-@Component
+
 public class UserPrincipal implements UserDetails {
 
     private User user;
@@ -23,6 +23,7 @@ public class UserPrincipal implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
 
         List<GrantedAuthority> authoritiesList = new ArrayList<>();
+
         GrantedAuthority authority = new SimpleGrantedAuthority(this.user.getRole().getDescription());
 
         authoritiesList.add(authority);

@@ -19,33 +19,33 @@ import java.util.List;
 public class SecurityConfig {
 
 
-    @Bean
-    public UserDetailsService userDetailsService(PasswordEncoder encoder) {
-
-        List<UserDetails> userDetailsList = new ArrayList<>();
-
-        userDetailsList.add(
-                new User("mike", encoder.encode("password"), Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN")))
-        );
-
-        userDetailsList.add(
-                new User("jill", encoder.encode("password2"), Arrays.asList(new SimpleGrantedAuthority("ROLE_MANAGER")))
-        );
-
-
-        return new InMemoryUserDetailsManager(userDetailsList);
-
-    }
+//    @Bean
+//    public UserDetailsService userDetailsService(PasswordEncoder encoder) {
+//
+//        List<UserDetails> userDetailsList = new ArrayList<>();
+//
+//        userDetailsList.add(
+//                new User("mike", encoder.encode("password"), Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN")))
+//        );
+//
+//        userDetailsList.add(
+//                new User("jill", encoder.encode("password2"), Arrays.asList(new SimpleGrantedAuthority("ROLE_MANAGER")))
+//        );
+//
+//
+//        return new InMemoryUserDetailsManager(userDetailsList);
+//
+//    }
 
 /** FILTERING WHO (AUTHENTICATING) ......... CAN ACCESS WHICH PAGES (AUTHORIZING) **/
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http.authorizeRequests()
-                .antMatchers("/task/**").hasRole("MANAGER")
-                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
-                .antMatchers("/project/**").hasRole("MANAGER")
-                .antMatchers("/user/**").hasRole("ADMIN")
+//                .antMatchers("/task/**").hasRole("MANAGER")
+//                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
+//                .antMatchers("/project/**").hasRole("MANAGER")
+                .antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
                 .antMatchers(
                         "/",
                         "/login",
