@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 25 !!&#10;&#10;(Finished Watching @1:06:00 on Day 25 -&gt; App may have minor bugs)">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/TicketingProjectMvcApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -413,7 +412,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682575902109</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)">
+      <created>1684258467331</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1684258467331</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +449,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( User Mapper Finished  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserDTOConverter fixed {Role -&gt; RoleDTO by converter}  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController selectUserToUpdate() fixed  )" />
@@ -468,6 +473,7 @@
     <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete finished )" />
     <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete finished &#10;&#10;*&amp;&amp;*&#10;&#10;ProjectController -&gt; Update feature fixed&#10;&#10;)" />
     <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;(projectController -&gt; ProjectList feature added)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 24 !!&#10;&#10;(projectController -&gt; ProjectList feature added)" />
+    <MESSAGE value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
   </component>
 </project>
