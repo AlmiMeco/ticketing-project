@@ -55,7 +55,12 @@ public class SecurityConfig {
                 ).permitAll() //allow any User to enter ^^ given end-points
                 .anyRequest().authenticated()
                 .and()
-                .httpBasic() // style of our login form
+//                .httpBasic() // style of our login form
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/welcome")
+                .failureUrl("/login?error=true")
+                .permitAll()
                 .and().build();
     }
 
