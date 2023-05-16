@@ -37,7 +37,7 @@ public class SecurityConfig {
 
     }
 
-/** FILTERING WHO (AUTHENTICATING) CAN ACCESS WHICH PAGES (AUTHORIZING) **/
+/** FILTERING WHO (AUTHENTICATING) ......... CAN ACCESS WHICH PAGES (AUTHORIZING) **/
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
