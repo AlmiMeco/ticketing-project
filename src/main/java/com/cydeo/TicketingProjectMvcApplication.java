@@ -26,7 +26,7 @@ public class TicketingProjectMvcApplication {
     @Bean // Bean instead of @Component bc we do not have access to this Class (PasswordEncoder class is -> RO)
     public PasswordEncoder passwordEncoder(){
 
-        return new BCryptPasswordEncoder();
+        return new BCryptPasswordEncoder(); // <- Encryption method/algorithm (RSA)
     }
 
 
