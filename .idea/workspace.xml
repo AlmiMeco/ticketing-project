@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="amin@admin added -&gt; login nit permitted">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,6 +139,7 @@
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
       <workItem from="1682545713495" duration="16159000" />
+      <workItem from="1684330205748" duration="709000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>

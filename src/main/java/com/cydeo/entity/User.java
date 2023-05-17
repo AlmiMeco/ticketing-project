@@ -23,7 +23,7 @@ public class User extends BaseEntity {
 
     private boolean enabled;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne()
     private Role role;
 
     @Enumerated(EnumType.STRING)
