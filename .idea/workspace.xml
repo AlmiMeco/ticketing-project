@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/create.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/user/update.html" afterDir="false" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/service/impl/ProjectServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,14 +138,7 @@
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
       <workItem from="1682545713495" duration="16159000" />
-      <workItem from="1684330205748" duration="17157000" />
-    </task>
-    <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
-      <created>1678324007426</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1678324007426</updated>
+      <workItem from="1684330205748" duration="17736000" />
     </task>
     <task id="LOCAL-00002" summary="Spring MVC: DAY 10  -&gt;   @1:02:41">
       <created>1678325447383</created>
@@ -486,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684346339775</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation">
+      <created>1684355300478</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1684355300478</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -516,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Entity Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Service Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Repo Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectDTOConverter Created )" />
@@ -541,6 +537,7 @@
     <MESSAGE value="Spring-Security : Day 27 Begins !!!&#10;&#10;(logout function added)" />
     <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(custom Log-In redirect based on Roles (Authorities))" />
     <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)" />
+    <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation" />
   </component>
 </project>

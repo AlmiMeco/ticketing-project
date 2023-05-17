@@ -13,6 +13,7 @@ import com.cydeo.service.TaskService;
 import com.cydeo.service.UserService;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.data.domain.Sort;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -116,10 +117,13 @@ public class ProjectServiceImpl implements ProjectService {
     @Override
     public List<ProjectDTO> listAllProjectDetails() {
 
-        //                                                     vvv Manager(User) (simulating a manger signing-in)
-        UserDTO managerDTO = userService.findByUserName("harold@manager.com");
-        // <- added bc we need a 'manager'  (no log-in feature) -> will be fixed when we add security
+
+        String userName = SecurityContextHolder.getContext().getAuthentication().getName();
+        UserDTO managerDTO = userService.findByUserName(userName);
         User managerEntity = userMapper.convertToEntity(managerDTO);
+
+
+
 
         List<Project> projectsBelongingToManager = projectRepository.findAllByAssignedManager(managerEntity);
 
