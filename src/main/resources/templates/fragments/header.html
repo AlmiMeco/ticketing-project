@@ -4,7 +4,7 @@
 
 <body>
 
-<div th:fragment="header">
+<div th:fragment="header" >
     <div class="dashboard-header">
         <nav class="navbar navbar-expand-lg bg-white fixed-top">
             <a class="navbar-brand">
@@ -39,7 +39,7 @@
                                 <span class="status"></span>
                                 <span class="ml-2">Available</span>
                             </div>
-                            <a class="dropdown-item" href="#"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                            <a class="dropdown-item" th:href="@{/logout}"><i class="fas fa-power-off mr-2"></i>Logout</a>
                         </div>
                     </li>
                 </ul>

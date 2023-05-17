@@ -28,6 +28,8 @@ public class UserDTO {
     @Pattern(regexp = "(?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{4,}")
     private String passWord;
 
+    private String confirmPassword;
+
     @NotBlank
     @Pattern(regexp = "\"^\\\\d{10}$\"")
     private String phone;

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring-Security : Day 27 &#10;&#10;(fixed hard-coded manager userName -&gt; listAllProjectDetails)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +26,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="part-10-Spring-Data" />
+        <entry key="$PROJECT_DIR$" value="part-11-Spring-Security" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/resources/templates/fragments/left-sidebar.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/task/status-update.html" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/templates/user/create.html" root0="SKIP_INSPECTION" />
   </component>
@@ -139,20 +141,7 @@
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
       <workItem from="1682545713495" duration="16159000" />
-    </task>
-    <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
-      <created>1678324007426</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1678324007426</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Spring MVC: DAY 10  -&gt;   @1:02:41">
-      <created>1678325447383</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1678325447383</updated>
+      <workItem from="1684330205748" duration="18880000" />
     </task>
     <task id="LOCAL-00003" summary="Spring MVC: DAY 10  -&gt;   @2:19:00">
       <created>1678407357822</created>
@@ -441,7 +430,63 @@
       <option name="project" value="LOCAL" />
       <updated>1684272358194</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="amin@admin fix -&gt; @FetchType=LAZY removed">
+      <created>1684330967352</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1684330967352</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Notes added explaining SecurityConfig">
+      <created>1684334724947</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1684334724947</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Spring-Security : Day 27 Begins !!!&#10;&#10;(logout function added)">
+      <created>1684339948371</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1684339948371</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Spring-Security : Day 27 &#10;&#10;(custom Log-In redirect based on Roles (Authorities))">
+      <created>1684342150967</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1684342150967</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)">
+      <created>1684345539743</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1684345539743</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)">
+      <created>1684346339775</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1684346339775</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation">
+      <created>1684355300478</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1684355300478</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Spring-Security : Day 27 &#10;&#10;(fixed hard-coded manager userName -&gt; listAllProjectDetails)">
+      <created>1684355811098</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1684355811098</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -458,7 +503,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/part-11-Spring-Security" />
                       </list>
                     </value>
                   </entry>
@@ -471,13 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController selectUserToUpdate() fixed  )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserServiceImpl update() fixed  )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController delete() fixed  )" />
-    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( User delete method updated -&gt; User will be deleted form UI :: User will remain in the dB )" />
-    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( PrePersist &amp;&amp; PreUpdate methods added to BaseEntity )" />
-    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Entity Created )" />
-    <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Service Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Project Repo Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectDTOConverter Created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectMapper Created )" />
@@ -496,6 +534,13 @@
     <MESSAGE value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
     <MESSAGE value="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)" />
     <MESSAGE value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
+    <MESSAGE value="amin@admin fix -&gt; @FetchType=LAZY removed" />
+    <MESSAGE value="Notes added explaining SecurityConfig" />
+    <MESSAGE value="Spring-Security : Day 27 Begins !!!&#10;&#10;(logout function added)" />
+    <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(custom Log-In redirect based on Roles (Authorities))" />
+    <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(Hashed Password does NOT match input password)" />
+    <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(confirmPassword field added to UserDTO &amp;&amp; Create/Update .html) --&gt; Fixed incorrect passWord hash creation" />
+    <MESSAGE value="Spring-Security : Day 27 &#10;&#10;(fixed hard-coded manager userName -&gt; listAllProjectDetails)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring-Security : Day 27 &#10;&#10;(fixed hard-coded manager userName -&gt; listAllProjectDetails)" />
   </component>
 </project>

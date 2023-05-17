@@ -19,6 +19,13 @@ public class UserPrincipal implements UserDetails {
         this.user = user;
     }
 
+    /**
+
+         How Spring-Security understands 'ROLES'
+
+        'ROLES' are mapped --> to GrantedAuthorities
+
+     **/
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
 
@@ -59,5 +66,9 @@ public class UserPrincipal implements UserDetails {
     @Override
     public boolean isEnabled() {
         return this.user.isEnabled();
+    }
+
+    public Long getId(){
+        return this.user.getId();
     }
 }
