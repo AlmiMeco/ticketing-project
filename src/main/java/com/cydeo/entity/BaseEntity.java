@@ -10,6 +10,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 @MappedSuperclass
+@EntityListeners((BaseEntity.class))
 
 // Behind the scenes fields (NOT visible to end user)
 public class BaseEntity {
