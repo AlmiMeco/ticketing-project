@@ -3,17 +3,8 @@ package com.cydeo.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 public class SecurityConfig {
@@ -37,15 +28,17 @@ public class SecurityConfig {
 //
 //    }
 
-/** FILTERING WHO (AUTHENTICATING) ......... CAN ACCESS WHICH PAGES (AUTHORIZING) **/
+    /**
+     * FILTERING WHO (AUTHENTICATING) ......... CAN ACCESS WHICH PAGES (AUTHORIZING)
+     **/
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
         return http.authorizeRequests()
-//                .antMatchers("/task/**").hasRole("MANAGER")
-//                .antMatchers("/task/employee/**").hasRole("EMPLOYEE")
-//                .antMatchers("/project/**").hasRole("MANAGER")
-                .antMatchers("/user/**").hasAuthority("ROLE_ADMIN")
+                .antMatchers("/task/**").hasAuthority("Manager")
+                .antMatchers("/task/employee/**").hasAuthority("Employee")
+                .antMatchers("/project/**").hasAuthority("Manager")
+                .antMatchers("/user/**").hasAuthority("Admin")
                 .antMatchers(
                         "/",
                         "/login",
@@ -56,11 +49,15 @@ public class SecurityConfig {
                 .anyRequest().authenticated()
                 .and()
 //                .httpBasic() // (default)style of our login form
-                .formLogin()
-                .loginPage("/login") // (custom)style of our login form
-                .defaultSuccessUrl("/welcome") // succseful login -> /welcome page
-                .failureUrl("/login?error=true") // un-succseful login -> /login?error=true query
-                .permitAll()
+                    .formLogin()
+                    .loginPage("/login") // (custom)style of our login form
+                    .defaultSuccessUrl("/welcome") // succseful login -> /welcome page
+                    .failureUrl("/login?error=true") // un-succseful login -> /login?error=true query
+                    .permitAll()
+                .and()
+                    .logout()
+                    .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
+                    .logoutSuccessUrl("/login")
                 .and().build();
     }
 

@@ -17,13 +17,18 @@ public class SecurityServiceImpl implements SecurityService {
         this.userRepository = userRepository;
     }
 
+    /** Taking OUR User (Entity / DB) --converting-> that entity to Spring-Security User
+       org.springframework.security.core.userdetails **/
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
+        // getting 'User' (entity pkg) from dB
        User user = userRepository.findByUserName(username);
+
 
        if (user == null) throw new UsernameNotFoundException(username);
 
+       // return new UserPrincipal (UserPrincipal -> maps entity 'User' to Security 'User')
        return new UserPrincipal(user);
     }
 
