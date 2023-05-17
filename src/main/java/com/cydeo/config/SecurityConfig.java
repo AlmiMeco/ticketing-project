@@ -1,5 +1,6 @@
 package com.cydeo.config;
 
+import com.cydeo.service.SecurityService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -8,6 +9,15 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 public class SecurityConfig {
+
+
+    private final SecurityService securityService;
+    private final AuthSuccessHandlerConfig authSuccessHandlerConfig;
+
+    public SecurityConfig(SecurityService securityService, AuthSuccessHandlerConfig authSuccessHandlerConfig) {
+        this.securityService = securityService;
+        this.authSuccessHandlerConfig = authSuccessHandlerConfig;
+    }
 
 
 //    @Bean
@@ -51,13 +61,19 @@ public class SecurityConfig {
 //                .httpBasic() // (default)style of our login form
                     .formLogin()
                     .loginPage("/login") // (custom)style of our login form
-                    .defaultSuccessUrl("/welcome") // succseful login -> /welcome page
+//                    .defaultSuccessUrl("/welcome")                      // succseful login    -> /welcome page
+                    .successHandler(authSuccessHandlerConfig) //successful login -redirects-> to VARIOUS end-points (based off of Role/Authority)
                     .failureUrl("/login?error=true") // un-succseful login -> /login?error=true query
                     .permitAll()
                 .and()
                     .logout()
                     .logoutRequestMatcher(new AntPathRequestMatcher("/logout"))
                     .logoutSuccessUrl("/login")
+                .and()
+                    .rememberMe()
+                    .tokenValiditySeconds(120)
+                    .key("cydeo")
+                    .userDetailsService(securityService)
                 .and().build();
     }
 
