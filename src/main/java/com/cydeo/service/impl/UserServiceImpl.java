@@ -6,7 +6,6 @@ import com.cydeo.mapper.UserMapper;
 import com.cydeo.repository.UserRepository;
 import com.cydeo.service.UserService;
 import org.springframework.data.domain.Sort;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -55,8 +54,6 @@ public class UserServiceImpl implements UserService {
         User obj = userMapper.convertToEntity(user);
 
         obj.setPassWord(encoder.encode(obj.getPassWord())); //encoding our password (plain-text )
-
-        obj.setPassWord();
 
         userRepository.save(obj);
 
