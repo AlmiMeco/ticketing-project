@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring DATA : DAY 25 !!&#10;&#10;( Status Update feature finished )" />
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="part-9-Spring-Data" />
+        <entry key="$PROJECT_DIR$" value="part-10-Spring-Data" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,6 +40,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/controllers/UserController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/converter/ProjectDTOConverter.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" root0="SKIP_INSPECTION" />
@@ -61,28 +65,41 @@
     <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Almi's PC/IdeaProjects/ticketing-project",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.rainbow.brackets",
-    "spring.configuration.checksum": "d8047f4e368e006b961481e14c0c7dcd"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Almi's PC/IdeaProjects/ticketing-project&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;d8047f4e368e006b961481e14c0c7dcd&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RunManager" selected="Spring Boot.TicketingProjectMvcApplication">
+    <configuration name="TicketingProjectMvcApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ticketing-project" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cydeo.TicketingProjectMvcApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cydeo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TicketingProjectMvcApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ticketing-project" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cydeo.TicketingProjectMvcApplication" />
@@ -90,6 +107,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TicketingProjectMvcApplication (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -116,14 +138,7 @@
       <workItem from="1681945999483" duration="6986000" />
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
-      <workItem from="1682606537812" duration="1042000" />
-      <workItem from="1682607930209" duration="826000" />
-      <workItem from="1682622766449" duration="5000" />
-      <workItem from="1682625142281" duration="903000" />
-      <workItem from="1682626240981" duration="41000" />
-      <workItem from="1682712789087" duration="2826000" />
-      <workItem from="1682737720475" duration="1269000" />
-      <workItem from="1682738997889" duration="764000" />
+      <workItem from="1682545713495" duration="16159000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -342,28 +357,91 @@
       <option name="project" value="LOCAL" />
       <updated>1682120944011</updated>
     </task>
-    <task id="LOCAL-00032" summary="Spring DATA : DAY 25 !!&#10;&#10;(ProjectDelete -&gt; now deletes All tasks associated w/ SAID project :: Task/Project delete is a soft delete        (dB Persistence) )">
-      <created>1682714097493</created>
+    <task id="LOCAL-00032" summary="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )">
+      <created>1682547911086</created>
       <option name="number" value="00032" />
       <option name="presentableId" value="LOCAL-00032" />
       <option name="project" value="LOCAL" />
-      <updated>1682714097493</updated>
+      <updated>1682547911086</updated>
     </task>
-    <task id="LOCAL-00033" summary="Spring DATA : DAY 25 !!&#10;&#10;( PendingTasks &amp;&amp; Archive Controllers finished ::Tasks are not categorized by 'employee' )">
-      <created>1682738799583</created>
+    <task id="LOCAL-00033" summary="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskService Created )">
+      <created>1682548633652</created>
       <option name="number" value="00033" />
       <option name="presentableId" value="LOCAL-00033" />
       <option name="project" value="LOCAL" />
-      <updated>1682738799583</updated>
+      <updated>1682548633652</updated>
     </task>
-    <task id="LOCAL-00034" summary="Spring DATA : DAY 25 !!&#10;&#10;( Status Update feature finished )">
-      <created>1682739470226</created>
+    <task id="LOCAL-00034" summary="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskServiceImpl, TaskRepository, and TaskMapper Created )">
+      <created>1682549183411</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1682739470226</updated>
+      <updated>1682549183411</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; create() methods unCommented )">
+      <created>1682549901790</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1682549901790</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )">
+      <created>1682568644174</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1682568644174</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete )">
+      <created>1682570490735</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1682570490735</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete finished &#10;&#10;*&amp;&amp;*&#10;&#10;ProjectController -&gt; Update feature fixed&#10;&#10;)">
+      <created>1682572207761</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1682572207761</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Spring DATA : DAY 24 !!&#10;&#10;(projectController -&gt; ProjectList feature added)">
+      <created>1682575902109</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1682575902109</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)">
+      <created>1684258467331</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1684258467331</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)">
+      <created>1684262396607</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1684262396607</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)">
+      <created>1684262574244</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1684262574244</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)">
+      <created>1684272358194</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1684272358194</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -393,15 +471,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(Spring JPA &amp; PostgreSQL Driver added)" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;(User &amp;&amp; Role Tables created)" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Service pkg deleted *application NOT working* )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Repo layer created )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( ModelMapper Created --&gt; RoleMapper created )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( Role -&gt; converted to RoleDTO )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( RoleMapper auto-wirirng  )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( User Mapper Finished  )" />
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserDTOConverter fixed {Role -&gt; RoleDTO by converter}  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController selectUserToUpdate() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserServiceImpl update() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController delete() fixed  )" />
@@ -415,13 +484,18 @@
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( ProjectServiceImpl listAll() created , UserServiceImpl findByRole() created )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Save Project feature finished! )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( Complete Project feature finished! )" />
-    <MESSAGE value="Spring DATA : DAY 25 !!&#10;&#10;(ProjectDelete -&gt; now deletes All tasks associated w/ SAID project :: Task/Project delete is a soft delete        (dB Persistence) )" />
-    <MESSAGE value="Spring DATA : DAY 25 !!&#10;&#10;( PendingTasks &amp;&amp; Archive Controllers finished ::Tasks are not categorized by 'employee' )" />
-    <MESSAGE value="Spring DATA : DAY 25 !!&#10;&#10;( Status Update feature finished )" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring DATA : DAY 25 !!&#10;&#10;( Status Update feature finished )" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
+    <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( Task ENTITY Created )" />
+    <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskService Created )" />
+    <MESSAGE value="Spring DATA : DAY 24 BEGINS!!!!&#10;&#10;( TaskServiceImpl, TaskRepository, and TaskMapper Created )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; create() methods unCommented )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; STATUS error fixed, Update Buttn fixed, TaskRepo )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete finished )" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;( TaskController -&gt; Update &amp;&amp; Delete finished &#10;&#10;*&amp;&amp;*&#10;&#10;ProjectController -&gt; Update feature fixed&#10;&#10;)" />
+    <MESSAGE value="Spring DATA : DAY 24 !!&#10;&#10;(projectController -&gt; ProjectList feature added)" />
+    <MESSAGE value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
+    <MESSAGE value="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)" />
+    <MESSAGE value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
   </component>
 </project>
