@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="amin@admin added -&gt; login nit permitted">
+    <list default="true" id="c902c5c0-e282-403c-a1bf-72d361434ed5" name="Changes" comment="amin@admin fix -&gt; @FetchType=LAZY removed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cydeo/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1682018024108" duration="6642000" />
       <workItem from="1682113200544" duration="6889000" />
       <workItem from="1682545713495" duration="16159000" />
-      <workItem from="1684330205748" duration="709000" />
+      <workItem from="1684330205748" duration="3166000" />
     </task>
     <task id="LOCAL-00001" summary="(user/create.html) linked with controller">
       <created>1678324007426</created>
@@ -442,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684272358194</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="amin@admin fix -&gt; @FetchType=LAZY removed">
+      <created>1684330967352</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1684330967352</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +479,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController selectUserToUpdate() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserServiceImpl update() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 21 Part I&#10;&#10;( UserController delete() fixed  )" />
     <MESSAGE value="Spring DATA : DAY 23 BEGINS!!!!&#10;&#10;( User delete method updated -&gt; User will be deleted form UI :: User will remain in the dB )" />
@@ -497,6 +503,7 @@
     <MESSAGE value="Spring Security : DAY 26 Begins !!&#10;&#10;(Security Dependency added to pom.xml)" />
     <MESSAGE value="Spring Security : DAY 26 !!&#10;&#10;(PasswordEncoder Bean created to automate our 'encoding' process for clear-text passwords)" />
     <MESSAGE value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Spring Security : DAY 26 &#10;Security Filter Chain &#10;(allowing ANY)" />
+    <MESSAGE value="amin@admin fix -&gt; @FetchType=LAZY removed" />
+    <option name="LAST_COMMIT_MESSAGE" value="amin@admin fix -&gt; @FetchType=LAZY removed" />
   </component>
 </project>

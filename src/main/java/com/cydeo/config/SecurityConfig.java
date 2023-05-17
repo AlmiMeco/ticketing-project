@@ -55,11 +55,11 @@ public class SecurityConfig {
                 ).permitAll() //allow any User to enter ^^ given end-points
                 .anyRequest().authenticated()
                 .and()
-//                .httpBasic() // style of our login form
+//                .httpBasic() // (default)style of our login form
                 .formLogin()
-                .loginPage("/login")
-                .defaultSuccessUrl("/welcome")
-                .failureUrl("/login?error=true")
+                .loginPage("/login") // (custom)style of our login form
+                .defaultSuccessUrl("/welcome") // succseful login -> /welcome page
+                .failureUrl("/login?error=true") // un-succseful login -> /login?error=true query
                 .permitAll()
                 .and().build();
     }
